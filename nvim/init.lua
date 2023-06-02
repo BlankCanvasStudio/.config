@@ -13,3 +13,6 @@ vim.cmd.set('expandtab')
 vim.cmd.set('tabstop=8 softtabstop=0')
 
 vim.cmd.hi('LineNr guifg=#ffffff')
+
+vim.api.nvim_set_option("clipboard","unnamed")
+
