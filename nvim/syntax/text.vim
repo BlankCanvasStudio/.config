@@ -1,7 +1,7 @@
 :syntax match txtNote /NOTE:/
 :syntax match txtLookUp /LOOK\ UP:/ 
 :syntax match txtLookUp /LOOK\ INTO:/
-:syntax match txtTitle /#.*/
+:syntax match txtTitle /##.*/
 :syntax match txtTitle /Link:/
 :syntax match txtTitle /LINK:/
 :syntax match txtTitle /^[A-Z: ]*\n/
