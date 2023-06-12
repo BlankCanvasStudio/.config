@@ -5,7 +5,7 @@
 :syntax match txtTitle /Link:/
 :syntax match txtTitle /LINK:/
 :syntax match txtTitle /^[A-Z: ]*\n/
-:syntax match txtList /\ \ -\ /
+:syntax match txtList /^[ ]*- /
 :syntax match txtList /[0-9]*)/
 :syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
 
