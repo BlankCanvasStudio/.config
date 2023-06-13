@@ -1,3 +1,6 @@
+:syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
+:syntax region txtBash start=/`/ end=/`/
+:syntax region txtHighlighter start=/--/ end=/--/
 :syntax match txtTitle /^[A-Z: ]*\n/
 :syntax match txtNote /^[ ]*NOTE:/
 :syntax match txtLookUp /^[ ]*LOOK\ UP:/ 
@@ -6,9 +9,6 @@
 :syntax match txtTitle /^[ ]*LINK:/
 :syntax match txtDash /^[ ]*- /
 :syntax match txtList /^[ ]*[0-9]*)/
-:syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
-:syntax region txtBash start=/`/ end=/`/
-:syntax region txtHighlighter start=/--/ end=/--/
 :syntax match txtHighlighter /^[ ]*##.*/
 
 :highlight Normal ctermfg=white guifg=white
