@@ -3,17 +3,18 @@
 :syntax region txtHighlighter start=/--/ end=/--/
 :syntax match txtTitle /^[A-Z: ]*\n/
 :syntax match txtNote /NOTE:/
-:syntax match txtLookUp /LOOK\ UP:/ 
-:syntax match txtLookUp /LOOK\ INTO:/
+:syntax match txtGreen /LOOK\ UP:/ 
+:syntax match txtGreen /LOOK\ INTO:/
 :syntax match txtTitle /Link:/
 :syntax match txtTitle /LINK:/
 :syntax match txtDash /^[ ]*- /
 :syntax match txtList /^[ ]*[0-9]*)/
 :syntax match txtHighlighter /##.*/
+:syntax match txtGreen /^[ ]*\$.*/
 
 :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
-:highlight txtLookUp ctermfg=lightgreen guifg=#9ece6a
+:highlight txtGreen ctermfg=lightgreen guifg=#9ece6a
 :highlight txtDash ctermfg=yellow guifg=#ff9e64
 :highlight txtList ctermfg=yellow guifg=#2ac3de
 :highlight txtTitle ctermfg=cyan guifg=#7dcfff
