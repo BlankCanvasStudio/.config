@@ -1,10 +1,10 @@
 :syntax match txtTitle /^[A-Z: ]*\n/
-:syntax match txtNote /NOTE:/
-:syntax match txtLookUp /LOOK\ UP:/ 
-:syntax match txtLookUp /LOOK\ INTO:/
-:syntax match txtTitle /##.*/
-:syntax match txtTitle /Link:/
-:syntax match txtTitle /LINK:/
+:syntax match txtNote /^[ ]*NOTE:/
+:syntax match txtLookUp /^[ ]*LOOK\ UP:/ 
+:syntax match txtLookUp /^[ ]*LOOK\ INTO:/
+:syntax match txtTitle /^[ ]*##.*/
+:syntax match txtTitle /^[ ]*Link:/
+:syntax match txtTitle /^[ ]*LINK:/
 :syntax match txtDash /^[ ]*- /
 :syntax match txtList /^[ ]*[0-9]*)/
 :syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
