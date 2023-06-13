@@ -6,7 +6,7 @@
 :syntax match txtTitle /Link:/
 :syntax match txtTitle /LINK:/
 :syntax match txtDash /^[ ]*- /
-:syntax match txtList /[0-9]*)/
+:syntax match txtList /^[ ]*[0-9]*)/
 :syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
 :syntax region txtBash start=/`/ end=/`/
 :syntax region txtHighlighter start=/--/ end=/--/
