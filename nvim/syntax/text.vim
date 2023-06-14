@@ -1,7 +1,7 @@
 :syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
-:syntax region txtBash start=/`/ end=/`/
+:syntax region txtGreen start=/`/ end=/`/
 :syntax region txtHighlighter start=/--/ end=/--/
-:syntax region txtGreen start=/=>/ end=/<=/
+:syntax region txtPurple start=/=>/ end=/<=/
 :syntax match txtTitle /^[A-Z: ]*\n/
 :syntax match txtNote /NOTE:/
 :syntax match txtGreen /LOOK\ UP:/ 
@@ -22,7 +22,7 @@
 :highlight txtList ctermfg=yellow guifg=#2ac3de
 :highlight txtTitle ctermfg=cyan guifg=#7dcfff
 :highlight txtBlkCmt ctermfg=68 guifg=#4273ca
-:highlight txtBash ctermfg=35 guifg=#bb9af7
+:highlight txtBash ctermfg=lightgreen guifg=#9ece6a
 :highlight txtPurple ctermfg=35 guifg=#bb9af7
 :highlight txtHighlighter ctermfg=35 guifg=#ff9e64
 :highlight txtIndex ctermfg=35 guifg=#bb9af7
