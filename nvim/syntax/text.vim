@@ -11,7 +11,7 @@
 :syntax match txtList /^[ ]*[0-9]*)/
 :syntax match txtHighlighter /##.*/
 :syntax match txtGreen /^[ ]*\$.*/
-:syntax match txtPurple /^[ ]*%.*/
+:syntax match txtPurple /^[ ]*>.*/
 :syntax match txtIndex /\[[0-9]*\]/
 
 :highlight Normal ctermfg=white guifg=white
