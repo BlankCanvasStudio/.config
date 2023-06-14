@@ -2,6 +2,7 @@
 :syntax region txtGreen start=/`/ end=/`/
 :syntax region txtHighlighter start=/--/ end=/--/
 :syntax region txtPurple start=/=>/ end=/<=/
+:syntax region txtRed start=/\~\~/ end=/\~\~/
 :syntax match txtTitle /^[A-Z: ]*\n/
 :syntax match txtNote /NOTE:/
 :syntax match txtGreen /LOOK\ UP:/ 
@@ -14,6 +15,7 @@
 :syntax match txtGreen /^[ ]*\$.*/
 :syntax match txtPurple /^[ ]*>.*/
 :syntax match txtIndex /\[[0-9]*\]/
+:syntax match txtRed /^[ ]*!!.*/
 
 :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
@@ -26,3 +28,4 @@
 :highlight txtPurple ctermfg=35 guifg=#bb9af7
 :highlight txtHighlighter ctermfg=35 guifg=#ff9e64
 :highlight txtIndex ctermfg=35 guifg=#bb9af7
+:highlight txtRed ctermfg=35 guifg=#f7768e
