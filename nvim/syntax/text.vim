@@ -16,6 +16,7 @@
 :syntax match txtPurple /^[ ]*>.*/
 :syntax match txtIndex /\[[0-9]*\]/
 :syntax match txtRed /^[ ]*!!.*/
+:syntax match txtRed /\V(?)/
 
 :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
