@@ -12,6 +12,7 @@
 :syntax match txtHighlighter /##.*/
 :syntax match txtGreen /^[ ]*\$.*/
 :syntax match txtPurple /^[ ]*%.*/
+:syntax match txtIndex /\[[0-9]*\]/
 
 :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
@@ -23,3 +24,4 @@
 :highlight txtBash ctermfg=35 guifg=#bb9af7
 :highlight txtPurple ctermfg=35 guifg=#bb9af7
 :highlight txtHighlighter ctermfg=35 guifg=#ff9e64
+:highlight txtIndex ctermfg=35 guifg=#bb9af7
