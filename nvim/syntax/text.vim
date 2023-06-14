@@ -1,6 +1,7 @@
 :syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
 :syntax region txtBash start=/`/ end=/`/
 :syntax region txtHighlighter start=/--/ end=/--/
+:syntax region txtGreen start=/=>/ end=/<=/
 :syntax match txtTitle /^[A-Z: ]*\n/
 :syntax match txtNote /NOTE:/
 :syntax match txtGreen /LOOK\ UP:/ 
