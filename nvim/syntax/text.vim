@@ -17,6 +17,7 @@
 :syntax match txtIndex /\[[0-9]*\]/
 :syntax match txtRed /^[ ]*!!.*/
 :syntax match txtRed /\V(?)/
+:syntax match txtDarkYellow /[0-9\.-]*%/
 
 :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
@@ -29,4 +30,5 @@
 :highlight txtPurple ctermfg=35 guifg=#bb9af7
 :highlight txtHighlighter ctermfg=35 guifg=#ff9e64
 :highlight txtIndex ctermfg=35 guifg=#bb9af7
+:highlight txtDarkYellow ctermfg=yellow guifg=#e0af68
 :highlight txtRed ctermfg=35 guifg=#f7768e
