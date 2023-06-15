@@ -14,7 +14,7 @@
 :syntax match txtHighlighter /##.*/
 :syntax match txtGreen /^[ ]*\$.*/
 :syntax match txtPurple /^[ ]*>.*/
-:syntax match txtIndex /\[[0-9]*\]/
+:syntax match txtIndex /\[[0-9\-]*\]/
 :syntax match txtRed /^[ ]*!!.*/
 :syntax match txtRed /\V(?)/
 :syntax match txtDarkYellow /[0-9\.-]*%/
