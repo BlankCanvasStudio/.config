@@ -1,25 +1,61 @@
+
+" block comments. Usually used for REAL code
 :syntax region txtBlkCmt start=/\"\"\"/ end=/\"\"\"/
+" Green block comments used for bash
 :syntax region txtGreen start=/`/ end=/`/
+" Gold highlighted region
 :syntax region txtHighlighter start=/--/ end=/--/
+" Purple block region
 :syntax region txtPurple start=/=>/ end=/<=/
+" Red block comments
 :syntax region txtRed start=/\~\~/ end=/\~\~/
+
+
+" Gold inline regex
+:syntax match txtHighlighter /##.*/
+" Bash inline regex
+:syntax match txtGreen /^[ ]*\$.*/
+" Purple inline regex
+:syntax match txtPurple /^[ ]*>.*/
+" red inline regex
+:syntax match txtRed /^[ ]*!!.*/
+
+
+" Title regex
 :syntax match txtTitle /^[A-Z: ]*\n/
+" Note regex
 :syntax match txtNote /NOTE:/
+" Look up regex
 :syntax match txtGreen /LOOK\ UP:/ 
 :syntax match txtGreen /LOOK\ INTO:/
+" Link regex
 :syntax match txtTitle /Link:/
 :syntax match txtTitle /LINK:/
-:syntax match txtDash /^[ ]*- /
-:syntax match txtList /^[ ]*[0-9]*)/
-:syntax match txtHighlighter /##.*/
-:syntax match txtGreen /^[ ]*\$.*/
-:syntax match txtPurple /^[ ]*>.*/
-:syntax match txtIndex /\[[0-9\-\, ]*\]/
-:syntax match txtRed /^[ ]*!!.*/
-:syntax match txtRed /\V(?)/
-:syntax match txtDarkYellow /[0-9\.-]*%/
-:syntax match txtDarkYellow /^[ ]*- .*:/
+" Helpful regex
 :syntax match txtDarkBlue /HELPFUL:/
+" highlighting (?) regex
+:syntax match txtRed /\V(?)/
+
+
+" dashed list regex
+:syntax match txtDash /^[ ]*- /
+" numbered list regex
+:syntax match txtList /^[ ]*[0-9]*)/
+
+
+" Dashed definition regex
+:syntax match txtDarkYellow /^[ ]*- .*:/
+
+
+" citation / index regex
+:syntax match txtIndex /\[[0-9\-\, ]*\]/
+
+
+" Percent highlight regex
+:syntax match txtDarkYellow /[0-9\.-]*%/
+
+
+
 
 :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
@@ -35,3 +71,7 @@
 :highlight txtDarkYellow ctermfg=yellow guifg=#e0af68
 :highlight txtDarkBlue ctermfg=yellow guifg=#2ac3de
 :highlight txtRed ctermfg=35 guifg=#f7768e
+
+
+
+
