@@ -54,7 +54,7 @@
 " Percent highlight regex
 :syntax match txtDarkYellow /[0-9\.-]*%/
 
-
+:syntax match txtDarkBlue /->/
 
 
 :highlight Normal ctermfg=white guifg=white
