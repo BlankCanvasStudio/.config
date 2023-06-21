@@ -13,7 +13,7 @@ vim.cmd.set('expandtab')
 vim.cmd.set('tabstop=8 softtabstop=0')
 
 vim.cmd.set('colorcolumn=71')
-vim.cmd.hi('ColorColumn ctermbg=lightcyan guibg=#bb9af7')
+vim.cmd.hi('ColorColumn guifg=black guibg=#bb9af7')
 
 vim.cmd.hi('LineNr guifg=#ffffff')
 
