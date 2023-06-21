@@ -34,7 +34,6 @@
 " Helpful regex
 :syntax match txtDarkBlue /HELPFUL:/
 " Example regex
-:syntax match txtDarkBlue /EX:/
 :syntax match txtDarkBlue /Ex:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
