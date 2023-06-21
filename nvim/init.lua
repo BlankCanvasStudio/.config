@@ -19,3 +19,10 @@ vim.cmd.hi('LineNr guifg=#ffffff')
 
 vim.api.nvim_set_option("clipboard","unnamed")
 
+-- Set up nice colors for gitsigns while we're here
+vim.cmd.hi("SignColumn None")
+vim.cmd.hi("DiffAdd guifg=#9ece6a guibg=None")
+vim.cmd.hi("DiffChange guifg=#bb9af7 guibg=None")
+vim.cmd.hi("DiffDelete guifg=#f7768e guibg=None")
+vim.cmd.hi("DiffText guifg=white guibg=None")
+

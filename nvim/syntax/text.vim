@@ -18,7 +18,7 @@
 " Purple inline regex
 :syntax match txtPurple /^[ ]*>.*/
 " red inline regex
-:syntax match txtRed /^[ ]*!!.*/
+:syntax match txtRed /!!.*/
 
 
 " Title regex
@@ -33,6 +33,9 @@
 :syntax match txtTitle /LINK:/
 " Helpful regex
 :syntax match txtDarkBlue /HELPFUL:/
+" Example regex
+:syntax match txtDarkBlue /EX:/
+:syntax match txtDarkBlue /Ex:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
 
@@ -54,7 +57,11 @@
 " Percent highlight regex
 :syntax match txtDarkYellow /[0-9\.-]*%/
 
+" Highlighting the arrow is nice
 :syntax match txtDarkBlue /->/
+
+
+
 
 
 :highlight Normal ctermfg=white guifg=white
@@ -71,7 +78,4 @@
 :highlight txtDarkYellow ctermfg=yellow guifg=#e0af68
 :highlight txtDarkBlue ctermfg=yellow guifg=#2ac3de
 :highlight txtRed ctermfg=35 guifg=#f7768e
-
-
-
 
