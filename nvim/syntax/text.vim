@@ -25,6 +25,9 @@
 :syntax match txtTitle /^[A-Z: ]*\n/
 " Note regex
 :syntax match txtNote /NOTE:/
+" Question regex
+:syntax match txtRed /QUESTION:/
+:syntax match txtRed /Question:/
 " Look up regex
 :syntax match txtGreen /LOOK\ UP:/ 
 :syntax match txtGreen /LOOK\ INTO:/
