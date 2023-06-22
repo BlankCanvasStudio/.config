@@ -62,6 +62,8 @@
 " Highlighting the arrow is nice
 :syntax match txtDarkBlue /->/
 
+" Prevent end of line spaces
+:syntax match txtFullRed /[ ]*$/
 
 
 
@@ -80,4 +82,5 @@
 :highlight txtDarkYellow ctermfg=yellow guifg=#e0af68
 :highlight txtDarkBlue ctermfg=yellow guifg=#2ac3de
 :highlight txtRed ctermfg=35 guifg=#f7768e
+:highlight txtFullRed ctermfg=35 guifg=#f7768e guibg=#f7768e
 
