@@ -63,7 +63,7 @@
 :syntax match txtDarkBlue /->/
 
 " Prevent end of line spaces
-:syntax match txtFullRed /[ ]*$/
+:syntax match txtFullRed /\s\{2,}$/
 
 
 
