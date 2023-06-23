@@ -19,6 +19,9 @@
 :syntax match txtPurple /^[ ]*>.*/
 " red inline regex
 :syntax match txtRed /!!.*/
+" dark blue inline regex
+:syntax match txtDarkBlue /^[ ]*\/\/.*/
+:syntax match txtDarkBlue /\s\/\/.*/
 
 
 " Title regex
