@@ -25,7 +25,7 @@
 
 
 " Title regex
-:syntax match txtTitle /^[A-Z: \\\/]*\n/
+:syntax match txtTitle /^[A-Z: \\\/&]*\n/
 " Note regex
 :syntax match txtNote /NOTE:/
 " Question regex
