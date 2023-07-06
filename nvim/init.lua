@@ -7,6 +7,8 @@ vim.opt.scrolloff = math.floor(vim.api.nvim_win_get_height(0) / 4)
 
 vim.cmd.set('nu')
 
+vim.cmd.set('guicursor=n-v-c-i:block')
+
 vim.cmd.set('tabstop=4')
 vim.cmd.set('shiftwidth=4 smarttab')
 vim.cmd.set('expandtab')
