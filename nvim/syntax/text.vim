@@ -41,7 +41,6 @@
 :syntax match txtDarkBlue /HELPFUL:/
 " Example regex
 :syntax match txtDarkBlue /Ex:/
-:syntax match txtDarkBlue /Example:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
 
@@ -49,7 +48,7 @@
 " dashed list regex
 :syntax match txtDash /^[ ]*- /
 " numbered list regex
-:syntax match txtList /^[ ]*[0-9]*)/
+:syntax match txtList /^[ ]*[0-9\.]*)/
 
 
 " Dashed definition regex
