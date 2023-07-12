@@ -39,6 +39,9 @@
 :syntax match txtTitle /LINK:/
 " Helpful regex
 :syntax match txtDarkBlue /HELPFUL:/
+" Where regex
+:syntax match txtDarkBlue /Where:/
+:syntax match txtDarkBlue /WHERE:/
 " Example regex
 :syntax match txtDarkBlue /Ex:/
 " highlighting (?) regex
