@@ -25,7 +25,7 @@
 
 
 " Title regex
-:syntax match txtTitle /^[0-9A-Z: \\\/&\'\"\-]*\n/
+:syntax match txtTitle /^[0-9A-Z: \\&\'\"]*\n/
 " Note regex
 :syntax match txtNote /NOTE:/
 " Question regex
@@ -39,9 +39,6 @@
 :syntax match txtTitle /LINK:/
 " Helpful regex
 :syntax match txtDarkBlue /HELPFUL:/
-" Where regex
-:syntax match txtDarkBlue /Where:/
-:syntax match txtDarkBlue /WHERE:/
 " Example regex
 :syntax match txtDarkBlue /Ex:/
 " highlighting (?) regex
