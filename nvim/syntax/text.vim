@@ -41,6 +41,9 @@
 :syntax match txtDarkBlue /HELPFUL:/
 " Example regex
 :syntax match txtDarkBlue /Ex:/
+" Where regex
+:syntax match txtGreen /Where:/
+:syntax match txtGreen /WHERE:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
 
