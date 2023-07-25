@@ -44,6 +44,7 @@
 " Where regex
 :syntax match txtGreen /Where:/
 :syntax match txtGreen /WHERE:/
+:syntax match txtGreen /where:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
 
