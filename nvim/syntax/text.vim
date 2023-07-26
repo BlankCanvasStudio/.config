@@ -28,6 +28,8 @@
 :syntax match txtTitle /^[0-9A-Z: \\&\'\"\_]*\n/
 " Equals regex
 :syntax match txtDarkBlue /^[ ]*=.*/
+" Remember regex
+:syntax match txtNote /REMEMBER:/
 " Note regex
 :syntax match txtNote /NOTE:/
 " Question regex
