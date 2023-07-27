@@ -49,6 +49,8 @@
 :syntax match txtGreen /Where:/
 :syntax match txtGreen /WHERE:/
 :syntax match txtGreen /where:/
+" Therefore regex
+:syntax match txtDarkBlue /Therefore:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
 
