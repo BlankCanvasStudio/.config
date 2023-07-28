@@ -25,7 +25,7 @@
 
 
 " Title regex
-:syntax match txtTitle /^[0-9A-Z: \\&\'\"\_]*\n/
+:syntax match txtTitle /^[0-9A-Z: \\&\'\"\_\(\)]*\n/
 " Equals regex
 :syntax match txtDarkBlue /^[ ]*=.*/
 " Remember regex
