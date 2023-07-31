@@ -45,6 +45,11 @@
 :syntax match txtDarkBlue /HELPFUL:/
 " Example regex
 :syntax match txtDarkBlue /Ex:/
+" Question regex
+:syntax match txtDarkBlue /Question:/
+:syntax match txtDarkBlue /Questions:/
+:syntax match txtDarkBlue /QUESTION:/
+:syntax match txtDarkBlue /QUESTIONS:/
 " Where regex
 :syntax match txtGreen /Where:/
 :syntax match txtGreen /WHERE:/
