@@ -64,6 +64,7 @@
 :syntax match txtDash /^[ ]*- /
 " numbered list regex
 :syntax match txtList /^[ ]*[0-9\.N\+]*)/
+:syntax match txtList /^[ ]*[0-9\.N\+]*).*:/
 
 
 " Dashed definition regex
