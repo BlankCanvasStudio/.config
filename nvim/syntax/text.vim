@@ -45,6 +45,9 @@
 :syntax match txtDarkBlue /HELPFUL:/
 " Example regex
 :syntax match txtDarkBlue /Ex:/
+" Try regex
+:syntax match txtDarkBlue /TRY:/
+:syntax match txtDarkBlue /Try:/
 " Fix regex
 :syntax match txtRed /Fix:/
 " Question regex
