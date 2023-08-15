@@ -48,6 +48,9 @@
 " Try regex
 :syntax match txtDarkBlue /TRY:/
 :syntax match txtDarkBlue /Try:/
+" Tried regex
+:syntax match txtPurple /TRIED:/
+:syntax match txtPurple /Tried:/
 " Fix regex
 :syntax match txtRed /Fix:/
 " Question regex
