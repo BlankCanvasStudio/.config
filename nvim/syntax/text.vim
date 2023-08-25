@@ -66,6 +66,10 @@
 :syntax match txtDarkBlue /Therefore:/
 " highlighting (?) regex
 :syntax match txtRed /\V(?)/
+" Issue regex
+:syntax match txtRed /ISSUE:/
+:syntax match txtRed /Issue:/
+
 
 
 " dashed list regex
