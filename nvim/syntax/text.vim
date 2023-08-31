@@ -69,6 +69,11 @@
 " Issue regex
 :syntax match txtRed /ISSUE:/
 :syntax match txtRed /Issue:/
+" Result regex
+:syntax match txtHighlighter /RESULTS:/
+:syntax match txtHighlighter /RESULT:/
+:syntax match txtHighlighter /Result:/
+:syntax match txtHighlighter /Results:/
 
 
 
