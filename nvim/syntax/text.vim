@@ -51,6 +51,9 @@
 " Tried regex
 :syntax match txtPurple /TRIED:/
 :syntax match txtPurple /Tried:/
+" IDEA regex
+:syntax match txtPurple /IDEA:/
+:syntax match txtPurple /Idea:/
 " Fix regex
 :syntax match txtRed /Fix:/
 " Question regex
