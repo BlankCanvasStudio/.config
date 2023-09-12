@@ -32,9 +32,6 @@
 :syntax match txtNote /REMEMBER:/
 " Note regex
 :syntax match txtNote /NOTE:/
-" Question regex
-:syntax match txtRed /QUESTION:/
-:syntax match txtRed /Question:/
 " Look up regex
 :syntax match txtGreen /LOOK\ UP:/ 
 :syntax match txtGreen /LOOK\ INTO:/
@@ -57,10 +54,10 @@
 " Fix regex
 :syntax match txtRed /Fix:/
 " Question regex
-:syntax match txtDarkBlue /Question:/
-:syntax match txtDarkBlue /Questions:/
-:syntax match txtDarkBlue /QUESTION:/
-:syntax match txtDarkBlue /QUESTIONS:/
+:syntax match txtPurple /Question:/
+:syntax match txtPurple /Questions:/
+:syntax match txtPurple /QUESTION:/
+:syntax match txtPurple /QUESTIONS:/
 " Where regex
 :syntax match txtGreen /Where:/
 :syntax match txtGreen /WHERE:/
