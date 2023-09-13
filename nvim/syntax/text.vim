@@ -22,6 +22,8 @@
 " dark blue inline regex
 :syntax match txtDarkBlue /^[ ]*\/\/.*/
 :syntax match txtDarkBlue /\s\/\/.*/
+" Dashed line regex
+:syntax match txtGreen /^[-]*$/
 
 
 " Title regex
