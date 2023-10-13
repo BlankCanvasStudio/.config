@@ -97,7 +97,7 @@
 " Percent highlight regex
 :syntax match txtDarkYellow /[0-9\.-]*%/
 " Number regex but allow for hex codes
-:syntax match txtDarkYellow /#[a-fA-F0-9]*/
+:syntax match txtDarkYellow /#\x\+/
 
 " Highlighting the arrow is nice
 :syntax match txtDarkBlue /->/
