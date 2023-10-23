@@ -64,6 +64,9 @@
 :syntax match txtGreen /Where:/
 :syntax match txtGreen /WHERE:/
 :syntax match txtGreen /where:/
+" TODO regex
+:syntax match txtGreen /TODO:/
+:syntax match txtGreen /Todo:/
 " Therefore regex
 :syntax match txtDarkBlue /Therefore:/
 " highlighting (?) regex
