@@ -67,6 +67,9 @@
 " TODO regex
 :syntax match txtGreen /TODO:/
 :syntax match txtGreen /Todo:/
+" DONE regex
+:syntax match txtPurple /DONE:/
+:syntax match txtPurple /Done:/
 " Therefore regex
 :syntax match txtDarkBlue /Therefore:/
 " highlighting (?) regex
@@ -79,6 +82,16 @@
 :syntax match txtHighlighter /RESULT:/
 :syntax match txtHighlighter /Result:/
 :syntax match txtHighlighter /Results:/
+:syntax match txtHighlighter /result:/
+:syntax match txtHighlighter /results:/
+" Technique match
+:syntax match txtHighlighter /technique:/
+:syntax match txtHighlighter /techniques:/
+:syntax match txtHighlighter /Technique:/
+:syntax match txtHighlighter /Techniques:/
+:syntax match txtHighlighter /TECHNIQUE:/
+:syntax match txtHighlighter /TECHNIQUES:/
+
 
 
 
