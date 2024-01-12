@@ -4,7 +4,7 @@
 " Green block comments used for bash
 :syntax region txtGreen start=/`/ end=/`/
 " Gold highlighted region
-:syntax region txtHighlighter start=/--/ end=/--/
+" :syntax region txtHighlighter start=/--/ end=/--/
 " Purple block region
 :syntax region txtPurple start=/=>/ end=/<=/
 " Red block comments
