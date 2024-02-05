@@ -24,6 +24,8 @@
 :syntax match txtDarkBlue /\s\/\/.*/
 " Dashed line regex
 :syntax match txtGreen /^[-]*$/
+" Question regex
+:syntax match txtDarkBlue /^[ ]*?.*/
 
 
 " Title regex
