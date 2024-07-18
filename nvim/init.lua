@@ -2,7 +2,6 @@ require('plugins.init')
 require('remaps.init')
 
 vim.wo.wrap = false
-
 vim.opt.scrolloff = math.floor(vim.api.nvim_win_get_height(0) / 4)
 
 vim.cmd.set('nu')
@@ -27,4 +26,7 @@ vim.cmd.hi("DiffAdd guifg=#9ece6a guibg=None")
 vim.cmd.hi("DiffChange guifg=#bb9af7 guibg=None")
 vim.cmd.hi("DiffDelete guifg=#f7768e guibg=None")
 vim.cmd.hi("DiffText guifg=white guibg=None")
+
+-- Set up tab find and replace remap
+vim.api.nvim_set_keymap('n', '<leader>r', ':%s/\\t/    /g<Cr>:w<Cr>', { noremap = true, silent = false })
 

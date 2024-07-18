@@ -101,8 +101,8 @@
 " dashed list regex
 :syntax match txtDash /^[ ]*- /
 " numbered list regex
-:syntax match txtList /^[ ]*[0-9\.N\+]*)/
-:syntax match txtList /^[ ]*[0-9\.N\+]*).*:/
+:syntax match txtList /^[ ]*[0-9a-zA-z\.N\+]*)/
+:syntax match txtList /^[ ]*[0-9a-zA-z\.N\+]*).*:/
 
 
 " Dashed definition regex
@@ -127,7 +127,7 @@
 
 
 
-:highlight Normal ctermfg=white guifg=white
+" :highlight Normal ctermfg=white guifg=white
 :highlight txtNote ctermfg=35 guifg=#f7768e
 :highlight txtGreen ctermfg=lightgreen guifg=#9ece6a
 :highlight txtDash ctermfg=yellow guifg=#ff9e64
