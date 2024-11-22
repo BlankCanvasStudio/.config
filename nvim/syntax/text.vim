@@ -6,9 +6,9 @@
 " Gold highlighted region
 " :syntax region txtHighlighter start=/--/ end=/--/
 " Purple block region
-:syntax region txtPurple start=/=>/ end=/<=/
+" :syntax region txtPurple start=/=>/ end=/<=/
 " Red block comments
-:syntax region txtRed start=/\~\~/ end=/\~\~/
+" :syntax region txtRed start=/\~\~/ end=/\~\~/
 
 
 " Gold inline regex
@@ -34,6 +34,9 @@
 :syntax match txtDarkBlue /^[ ]*=.*/
 " Remember regex
 :syntax match txtNote /REMEMBER:/
+" Error regex
+:syntax match txtNote /ERROR:/
+:syntax match txtNote /Error:/
 " Note regex
 :syntax match txtNote /NOTE:/
 " Look up regex

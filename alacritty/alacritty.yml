@@ -86,8 +86,8 @@ colors:
       # cyan:    '#0db9d7'
       # white:   '#acb0d0'
 
-cursor:
-  blinking: Never
+# cursor:
+  # blinking: Never
 
 shell:
   program: /bin/bash
