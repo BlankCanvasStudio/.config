@@ -22,8 +22,8 @@ pcall(require, "remaps.init")
 -- General UI settings
 -----------------------------------------------------------
 vim.g.mapleader = " "
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- vim.g.loaded_netrw = 1
+-- vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
