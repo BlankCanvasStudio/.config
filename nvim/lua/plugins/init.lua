@@ -20,12 +20,17 @@ vim.opt.termguicolors = true
 
 -- empty setup using defaults
 require("nvim-tree").setup({
+    git = {
+        enable = true,
+        ignore = false,
+    },
     actions = {
         open_file = {
             resize_window = true
         }
     },
     view = {
+        side = "right",
         width = 26
     }
 })
@@ -67,8 +72,8 @@ require('gitsigns').setup {
     row = 0,
     col = 0
   },
-  yadm = {
-    enable = false
-  },
+  -- yadm = {
+  --   enable = false
+  -- },
 }
 

@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
     use('mbbill/undotree')
     use('christoomey/vim-tmux-navigator')
     use('nvim-tree/nvim-web-devicons')
-    use('nvim-tree/nvim-tree.lua') 
+    use('nvim-tree/nvim-tree.lua')
     -- use('folke/tokyonight.nvim')
     use('navarasu/onedark.nvim')
     use{'nvim-lualine/lualine.nvim', 

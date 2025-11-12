@@ -1,4 +1,13 @@
-require('onedark').setup {
-   stye = 'Deep'
+local ok, onedark = pcall(require, "onedark")
+if not ok then
+  return
+end
+
+onedark.setup {
+  style = 'deep', -- fixed typo and lowercase to match valid options
 }
-require('onedark').load()
+
+onedark.load()
+
+pcall(vim.cmd.hi, "EndOfBuffer guibg=NONE ctermbg=NONE")
+

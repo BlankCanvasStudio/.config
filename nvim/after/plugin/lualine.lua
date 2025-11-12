@@ -1,6 +1,14 @@
-local custom_onedark = require'lualine.themes.onedark'
+local ok_lualine, lualine = pcall(require, "lualine")
+if not ok_lualine then
+  return
+end
 
-require('lualine').setup {
+local ok_theme, custom_onedark = pcall(require, "lualine.themes.onedark")
+if not ok_theme then
+  custom_onedark = 'auto' -- fallback to default auto theme
+end
+
+lualine.setup {
   options = {
     icons_enabled = true,
     theme = custom_onedark,
