@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 -- File navigation
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "Open netrw" })
 
 -- NvimTree
 vim.keymap.set("n", "<leader>w", vim.cmd.NvimTreeToggle, { desc = "Toggle file tree" })
