@@ -76,12 +76,12 @@ return {
 
   -- Workflow / tools
   { "theprimeagen/harpoon" },
-  { "mbbill/undotree" },
-  { "christoomey/vim-tmux-navigator" },
+  -- { "mbbill/undotree" },
+  -- { "christoomey/vim-tmux-navigator" },
 
   -- Themes
-  { "folke/tokyonight.nvim" },
-  { "navarasu/onedark.nvim" },
+  -- { "folke/tokyonight.nvim" },
+  -- { "navarasu/onedark.nvim" },
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
   -- Git helper (this is actually a CLI tool, but leaving since you had it)
