@@ -1,7 +1,7 @@
 -----------------------------------------------------------
 -- Plugin definitions using lazy.nvim
 -----------------------------------------------------------
-require("lazy").setup({
+return {
   -- Core / Utilities
   { "nvim-lua/plenary.nvim" },
   { "nvim-tree/nvim-web-devicons" },
@@ -51,7 +51,7 @@ require("lazy").setup({
     },
   },
 
-  -- Telescope (fuzzy finder)
+  -- Telescope
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.6",
@@ -59,7 +59,7 @@ require("lazy").setup({
     cmd = "Telescope",
   },
 
-  -- Treesitter (syntax, highlighting)
+  -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -79,25 +79,12 @@ require("lazy").setup({
   { "mbbill/undotree" },
   { "christoomey/vim-tmux-navigator" },
 
-  -- Theme
+  -- Themes
   { "folke/tokyonight.nvim" },
   { "navarasu/onedark.nvim" },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-  -- Git helper
+  -- Git helper (this is actually a CLI tool, but leaving since you had it)
   { "BurntSushi/ripgrep" },
-
-  -- Optional LSP stack (commented out)
-  -- {
-  --   "VonHeikemen/lsp-zero.nvim",
-  --   branch = "v3.x",
-  --   dependencies = {
-  --     "neovim/nvim-lspconfig",
-  --     "williamboman/mason.nvim",
-  --     "williamboman/mason-lspconfig.nvim",
-  --     "hrsh7th/nvim-cmp",
-  --     "hrsh7th/cmp-nvim-lsp",
-  --     "L3MON4D3/LuaSnip",
-  --   },
-  -- },
-})
+}
 

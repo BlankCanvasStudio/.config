@@ -15,7 +15,8 @@ vim.opt.rtp:prepend(lazypath)
 -----------------------------------------------------------
 -- Load plugin definitions + remaps
 -----------------------------------------------------------
-pcall(require, "plugins.lazy")
+-- pcall(require, "plugins.lazy")
+require("lazy").setup("plugins")
 pcall(require, "remaps.init")
 
 -----------------------------------------------------------
