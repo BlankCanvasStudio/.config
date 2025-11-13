@@ -29,5 +29,5 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Theme
-pcall(vim.cmd.colorscheme, "tokyonight")
+pcall(vim.cmd.colorscheme, "catppuccin")
 
