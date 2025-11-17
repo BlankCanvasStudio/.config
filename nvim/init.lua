@@ -36,6 +36,10 @@ vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.wrap = false
 
+vim.opt.tabstop = 4        -- Number of spaces that a tab counts for
+vim.opt.shiftwidth = 4     -- Number of spaces for each indent
+vim.opt.expandtab = true   -- Convert tabs to spaces
+
 -- Theme
 pcall(vim.cmd.colorscheme, "catppuccin")
 

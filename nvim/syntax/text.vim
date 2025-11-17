@@ -14,24 +14,24 @@
 " Gold inline regex
 :syntax match txtHighlighter /##.*/
 " Bash inline regex
-:syntax match txtGreen /^[ ]*\$.*/
+:syntax match txtGreen /^[ \t]*\$.*/
 " Purple inline regex
-:syntax match txtPurple /^[ ]*>.*/
+:syntax match txtPurple /^[ \t]*>.*/
 " red inline regex
 :syntax match txtRed /!!.*/
 " dark blue inline regex
-:syntax match txtDarkBlue /^[ ]*\/\/.*/
+:syntax match txtDarkBlue /^[ \t]*\/\/.*/
 :syntax match txtDarkBlue /\s\/\/.*/
 " Dashed line regex
 :syntax match txtGreen /^[-]*$/
 " Question regex
-:syntax match txtDarkBlue /^[ ]*?.*/
+:syntax match txtDarkBlue /^[ \t]*?.*/
 
 
 " Title regex
 :syntax match txtTitle /^[0-9A-Z: \\&\'\"\_\(\)]*\n/
 " Equals regex
-:syntax match txtDarkBlue /^[ ]*=.*/
+:syntax match txtDarkBlue /^[ \t]*=.*/
 " Remember regex
 :syntax match txtNote /REMEMBER:/
 " Error regex
@@ -102,14 +102,14 @@
 
 
 " dashed list regex
-:syntax match txtDash /^[ ]*- /
+:syntax match txtDash /^[ \t]*- /
 " numbered list regex
-:syntax match txtList /^[ ]*[0-9a-zA-z\.N\+]*)/
-:syntax match txtList /^[ ]*[0-9a-zA-z\.N\+]*).*:/
+:syntax match txtList /^[ \t]*[0-9a-zA-z\.N\+]*)/
+:syntax match txtList /^[ \t]*[0-9a-zA-z\.N\+]*).*:/
 
 
 " Dashed definition regex
-:syntax match txtDarkYellow /^[ ]*- .*:/
+:syntax match txtDarkYellow /^[ \t]*- .*:/
 
 
 " citation / index regex
