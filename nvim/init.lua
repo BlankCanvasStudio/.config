@@ -46,3 +46,16 @@ vim.opt.colorcolumn = "81"
 -- Theme
 pcall(vim.cmd.colorscheme, "catppuccin")
 
+
+-- Automatically set scrolloff to 1/4th of the window height
+vim.api.nvim_create_autocmd("VimResized", {
+  callback = function()
+    local height = vim.api.nvim_win_get_height(0)
+    vim.o.scrolloff = math.floor(height / 4)
+  end,
+})
+
+-- Set initial value on startup
+local initial_height = vim.api.nvim_win_get_height(0)
+vim.o.scrolloff = math.floor(initial_height / 4)
+
