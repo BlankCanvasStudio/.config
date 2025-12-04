@@ -47,6 +47,23 @@ vim.opt.colorcolumn = "81"
 pcall(vim.cmd.colorscheme, "catppuccin")
 
 
+-- Make background transparent
+vim.api.nvim_set_hl(0, "Normal", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NormalNC", { bg = "NONE" })
+
+-- Make nvim tree (file explorer) see through
+vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NvimTreeNormalNC", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NvimTreeEndOfBuffer", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NvimTreeVertSplit", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NvimTreeStatusLine", { bg = "NONE" })
+vim.api.nvim_set_hl(0, "NvimTreeStatusLineNC", { bg = "NONE" })
+
+-- Make line numbers lighter
+-- vim.api.nvim_set_hl(0, "LineNr", { fg = "#CDCDCD" })  -- Lighter gray
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#cdd6f4" })  -- Lighter gray
+
 -- Automatically set scrolloff to 1/4th of the window height
 vim.api.nvim_create_autocmd("VimResized", {
   callback = function()
