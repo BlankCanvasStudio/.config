@@ -50,7 +50,7 @@ program = "/bin/bash"
 
 [window]
 decorations = "none"
-opacity = 0.9
+opacity = 0.95
 startup_mode = "Windowed"
 
 [window.padding]
