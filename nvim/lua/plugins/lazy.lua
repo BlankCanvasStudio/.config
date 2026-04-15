@@ -72,7 +72,7 @@ return {
       auto_install = true,
     },
   },
-  { "nvim-treesitter/playground" },
+  -- { "nvim-treesitter/playground" },
 
   -- Workflow / tools
   { "theprimeagen/harpoon" },
