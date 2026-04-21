@@ -146,3 +146,13 @@
 :highlight txtRed ctermfg=35 guifg=#f7768e
 :highlight txtFullRed ctermfg=35 guifg=#f7768e guibg=#f7768e
 
+
+
+
+
+" google specific highlights
+:syntax match txtRed /b\/[0-9]*/
+:syntax match txtPurple /cl\/[0-9]*/
+:syntax match txtPurple /gkecl\/[0-9]*/
+:syntax match txtGreen /go\/[^ \t\n.,:;!?()\[\]{}"']\+/
+
