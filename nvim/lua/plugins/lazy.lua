@@ -9,6 +9,7 @@ return {
   -- UI
   {
     "nvim-tree/nvim-tree.lua",
+    lazy = false,
     opts = {
       git = { enable = true, ignore = false },
       actions = { open_file = { resize_window = true } },
