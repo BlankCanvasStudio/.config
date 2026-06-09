@@ -76,6 +76,9 @@
 " DONE regex
 :syntax match txtPurple /DONE:/
 :syntax match txtPurple /Done:/
+" PENDING regex
+:syntax match txtPurple /PENDING:/
+:syntax match txtPurple /Pending:/
 " Therefore regex
 :syntax match txtDarkBlue /Therefore:/
 " highlighting (?) regex
