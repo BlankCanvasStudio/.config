@@ -8,6 +8,19 @@ return {
 
   -- UI
   {
+    "rcarriga/nvim-notify",
+    lazy = false,
+    config = function()
+      require("notify").setup({
+        background_colour = "#000000",
+        timeout = 3000,
+        level = vim.log.levels.INFO,
+      })
+      vim.notify = require("notify")
+    end,
+  },
+
+  {
     "nvim-tree/nvim-tree.lua",
     lazy = false,
     opts = {
@@ -78,6 +91,14 @@ return {
 
   -- Workflow / tools
   { "theprimeagen/harpoon" },
+  {
+    dir = "/usr/local/google/home/srstingley/waverunner",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    config = function()
+      require("waverunner").setup()
+    end,
+  },
   -- { "mbbill/undotree" },
   -- { "christoomey/vim-tmux-navigator" },
 
@@ -88,5 +109,14 @@ return {
 
   -- Git helper (this is actually a CLI tool, but leaving since you had it)
   { "BurntSushi/ripgrep" },
+
+  -- LSP Support
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+    },
+  },
 }
 
