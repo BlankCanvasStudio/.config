@@ -92,14 +92,14 @@ return {
 
   -- Workflow / tools
   { "theprimeagen/harpoon" },
-  {
-    dir = "/usr/local/google/home/srstingley/waverunner",
-    dependencies = { "nvim-lua/plenary.nvim" },
-    lazy = false,
-    config = function()
-      require("waverunner").setup()
-    end,
-  },
+  -- {
+  --   dir = "/usr/local/google/home/srstingley/waverunner",
+  --   dependencies = { "nvim-lua/plenary.nvim" },
+  --   lazy = false,
+  --   config = function()
+  --     require("waverunner").setup()
+  --   end,
+  -- },
   -- { "mbbill/undotree" },
   -- { "christoomey/vim-tmux-navigator" },
 
