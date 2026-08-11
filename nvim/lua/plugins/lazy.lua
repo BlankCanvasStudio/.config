@@ -7,18 +7,19 @@ return {
   { "nvim-tree/nvim-web-devicons" },
 
   -- UI
-  {
-    "rcarriga/nvim-notify",
-    lazy = false,
-    config = function()
-      require("notify").setup({
-        background_colour = "#000000",
-        timeout = 3000,
-        level = vim.log.levels.INFO,
-      })
-      vim.notify = require("notify")
-    end,
-  },
+  -- (Disabled nvim-notify to stop intrusive overlay window popups)
+  -- {
+  --   "rcarriga/nvim-notify",
+  --   lazy = false,
+  --   config = function()
+  --     require("notify").setup({
+  --       background_colour = "#000000",
+  --       timeout = 3000,
+  --       level = vim.log.levels.INFO,
+  --     })
+  --     vim.notify = require("notify")
+  --   end,
+  -- },
 
   {
     "nvim-tree/nvim-tree.lua",
