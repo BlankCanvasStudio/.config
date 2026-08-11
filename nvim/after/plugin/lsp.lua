@@ -44,44 +44,42 @@ vim.diagnostic.config({
 })
 
 mason.setup()
-mason_lspconfig.setup({
-  ensure_installed = {
-    "lua_ls",
-    "pyright",
-    "gopls",
-    "ts_ls",
+mason_lspconfig.setup({})
+
+local default_servers = {
+  "pyright",
+  "gopls",
+  "ts_ls",
+  "rust_analyzer",
+  "bashls",
+  "jsonls",
+  "yamlls",
+  "marksman",
+}
+
+for _, server in ipairs(default_servers) do
+  vim.lsp.config[server] = {}
+  vim.lsp.enable(server)
+end
+
+vim.lsp.config["clangd"] = {
+  cmd = {
     "clangd",
-    "rust_analyzer",
-    "bashls",
-    "jsonls",
-    "yamlls",
-    "marksman",
+    "--path-mappings=/usr/local/google/home/srstingley/gdc-offload-daemon/build=/testing/build,/usr/local/google/home/srstingley/gdc-offload-daemon=/testing",
   },
-  handlers = {
-    function(server_name)
-      lspconfig[server_name].setup({})
-    end,
-    ["clangd"] = function()
-      lspconfig.clangd.setup({
-        cmd = {
-          "clangd",
-          "--path-mappings=/usr/local/google/home/srstingley/gdc-offload-daemon/build=/testing/build,/usr/local/google/home/srstingley/gdc-offload-daemon=/testing",
-        },
-      })
-    end,
-    ["lua_ls"] = function()
-      lspconfig.lua_ls.setup({
-        settings = {
-          Lua = {
-            diagnostics = {
-              globals = { "vim" },
-            },
-          },
-        },
-      })
-    end,
+}
+vim.lsp.enable("clangd")
+
+vim.lsp.config["lua_ls"] = {
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" },
+      },
+    },
   },
-})
+}
+vim.lsp.enable("lua_ls")
 
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("UserLspConfig", {}),
